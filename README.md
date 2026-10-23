@@ -5,7 +5,7 @@ Temporal Engine, listens 10 ms ahead of the output in six frequency bands, finds
 that the filter would sound before each transient, and takes it out wherever it would be
 audible. The frequency response remains exactly the curve set.
 
-Equalisers have otherwise offered one of two compromises. A linear-phase equaliser preserves
+Conventional equalisers impose a choice between two compromises. A linear-phase equaliser preserves
 the phase but places half of its ringing ahead of each transient, where it is heard as a soft
 swell or a smear. A minimum-phase equaliser keeps transients clean but shifts the phase.
 Moraine gives the response of the first with the clean transients of the second. Where the
