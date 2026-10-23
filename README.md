@@ -1,11 +1,15 @@
 # Moraine
 
-Moraine is an equaliser for mixing and mastering. It gives the frequency response of a
-linear-phase equaliser at a latency of 10 ms, and it removes the pre-ringing that a
-linear-phase equaliser places ahead of transients. A neural network, the Temporal Engine,
-examines the signal 10 ms ahead in six frequency bands, determines where the ringing ahead of
-a transient would be audible, and removes it in that band alone. Where the pre-ringing is
-masked, nothing is removed, and Moraine behaves as a linear-phase equaliser.
+Moraine is a linear-phase equaliser that removes its own pre-ringing. A neural network, the
+Temporal Engine, listens 10 ms ahead of the output in six frequency bands, finds the ringing
+that the filter would sound before each transient, and takes it out wherever it would be
+audible. The frequency response remains exactly the curve set, and the latency is 10 ms.
+
+Equalisers have otherwise offered one of two compromises. A linear-phase equaliser preserves
+the phase but places half of its ringing ahead of each transient, where it is heard as a soft
+swell or a smear. A minimum-phase equaliser keeps transients clean but shifts the phase.
+Moraine gives the response of the first with the clean transients of the second. Where the
+pre-ringing is masked, as on sustained material, nothing is removed.
 
 This repository is where Moraine releases are published. **[Download the latest
 release](../../releases/latest).** The user guide is published beside the installer.
