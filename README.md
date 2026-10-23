@@ -3,7 +3,7 @@
 Moraine is a linear-phase equaliser that removes its own pre-ringing. A neural network, the
 Temporal Engine, listens 10 ms ahead of the output in six frequency bands, finds the ringing
 that the filter would sound before each transient, and takes it out wherever it would be
-audible. The frequency response remains exactly the curve set, and the latency is 10 ms.
+audible. The frequency response remains exactly the curve set.
 
 Equalisers have otherwise offered one of two compromises. A linear-phase equaliser preserves
 the phase but places half of its ringing ahead of each transient, where it is heard as a soft
