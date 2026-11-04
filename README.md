@@ -29,6 +29,9 @@ release](../../releases/latest).** The user guide is published beside the instal
 ## Requirements
 
 - macOS 11 or later, on Apple silicon.
+- A host that runs as an Apple silicon application. A host opened using Rosetta runs as an
+  Intel application and does not list Moraine. To open a host natively, select it in the
+  Finder, choose File > Get Info and clear **Open using Rosetta**.
 - A host that loads Audio Units, VST3 or AAX plug-ins: Logic Pro, Pro Tools, Ableton Live,
   Cubase, REAPER, Studio One and others.
 
